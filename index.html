@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>House Of Gambling</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+    <body>
+        <script>
+            function showMobileMenu(){
+                document.getElementById('menuMobile').style.display="flex";
+            }
+            function closeMobileMenu(){
+                document.getElementById('menuMobile').style.display="none";
+            }
+            function languageChange(){
+                var ids=document.getElementsByClassName('languageChangerID');
+                var arr=[];
+                for(var i=0;i<ids.length;++i){
+                    arr[i]=ids.item(i);
+                }
+                if(ids.item(0).textContent=='En'){
+                    arr.forEach((element)=>element.textContent='Ru');
+                }
+                else{
+                    arr.forEach((element)=>element.textContent='En');
+                }
+            }
+            function languageChangeMobile(){
+                var ids=document.getElementsByClassName('languageChangerIDMobile');
+                var arr=[];
+                for(var i=0;i<ids.length;++i){
+                    arr[i]=ids.item(i);
+                }
+                if(ids.item(0).textContent=='En'){
+                    arr.forEach((element)=>element.textContent='Ru');
+                }
+                else{
+                    arr.forEach((element)=>element.textContent='En');
+                }
+            }
+        </script>
+        <div id="menuMobile">
+            <div id="menuMobileHeader">
+                <img id="mobilelogo" src="./images/logo.png" alt="Logo">
+                <img id="language_image_mobileMenu" src="./images/BtnLanguage.png" alt="EN_Translator" onclick="languageChangeMobile()">
+                <p class="languageChangerIDMobile">En</p>
+                <p id="menuMobileCloseButton" onclick="closeMobileMenu()">X</p>
+            </div>
+            <ul id="menuMobileContainer">
+                <li class="menuMobile_button"><a href="#">About us</a></li>
+                <li class="menuMobile_button"><a href="#">Brands</a></li>
+                <li class="menuMobile_button"><a href="#">Commissions</a></li>
+                <li class="menuMobile_button"><a href="#">News</a></li>
+                <li class="menuMobile_button"><a href="#">Contact us</a></li>
+                <li class="menuMobile_button"><a href="#">Careers</a></li>
+            </ul>
+            <div id="menuMobileButtonsContainer">
+                <button class="buttons_elem">LOG IN</button>
+                <button class="buttons_elem">SIGN UP</button>
+            </div>
+        </div>
+        <header>
+            <img id="logo" src="./images/logo.png" alt="Logo">
+            <ul id="menu">
+                <li class="menu_button"><a href="#">About us</a></li>
+                <li class="menu_button"><a href="#">Brands</a></li>
+                <li class="menu_button"><a href="#">Commissions</a></li>
+                <li class="menu_button"><a href="#">News</a></li>
+                <li class="menu_button"><a href="#">Contact us</a></li>
+                <li class="menu_button"><a href="#">Careers</a></li>
+            </ul>
+            <div id="buttons">
+                <button class="buttons_elem" onclick="languageChange()"><img id="language_image" src="./images/translator.png" alt="EN_Translator"><p class="languageChangerID">En</p></button>
+                <button class="buttons_elem">LOG IN</button>
+                <button class="buttons_elem">SIGN UP</button>
+                <img id="language_image_mobile" src="./images/BtnLanguage.png" alt="EN_Translator" onclick="languageChangeMobile()">
+                <p class="languageChangerIDMobile">En</p>
+                <button id="menu_button" onclick="showMobileMenu()"></button>
+            </div>
+        </header>
+        <main>
+            <div id="titleAndbutton">
+                <div id="titleAndtext">
+                    <h3 id="title">HOUSE OF GAMBLING</h3>
+                    <p id="underTitle">Raise your ROI with direct advertiser</p>
+                </div>
+                <button id="titleAndbutton_button">BECOME A PARTNER</button>
+            </div>
+            <div id="bannerBG">
+                <div id="banner_down"></div>
+                <div id="banner_up"></div>
+                <div id="banner_down2"></div>
+            </div>
+            <div id="bannerBGVert">
+                <div id="banner_vertical"></div>
+                <div id="banner_vertical2"></div>
+                <div id="banner_vertical3"></div>
+            </div>
+            <div id="blog">
+                <p id="blog_title">BLOG</p>
+                <div id="area">
+                    <div id="card_area">
+                        <div class="card">
+                            <p class="card_text">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                            <time class="time_stamp" datetime="2023-02-10T12:00:00Z">10.02.2023</time>
+                        </div>
+                        <div class="card">
+                            <p class="card_text">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                            <time class="time_stamp" datetime="2023-02-10T12:00:00Z">10.02.2023</time>
+                        </div>
+                        <div class="card">
+                            <p class="card_text">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                            <time class="time_stamp" datetime="2023-02-10T12:00:00Z">10.02.2023</time>
+                        </div>
+                        <div class="card">
+                            <p class="card_text">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                            <time class="time_stamp" datetime="2023-02-10T12:00:00Z">10.02.2023</time>
+                        </div>
+                        <div class="card">
+                            <p class="card_text">Payment methods: Skrill, Neteller, webmoney, Bank transfer</p>
+                            <time class="time_stamp" datetime="2023-02-10T12:00:00Z">10.02.2023</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <ul id="footer_menu">
+                <li class="footer_menu_button"><a href="#">Terms & Conditions</a></li>
+                <li class="footer_menu_button"><a href="#">Cookies</a></li>
+                <li class="footer_menu_button"><a href="#">Contacts</a></li>
+                <li class="footer_menu_button"><a href="#">Careers</a></li>
+                <li class="footer_menu_button"><a href="#">Brand Guide</a></li>
+            </ul>
+            <div id="social_media_container">
+                <p id="social_media_title">Our social media:</p>
+                <div id="social_media_buttons">
+                <a href="#"><img class="social_media_icon" src="./images/Twitter.png" alt="Twitter"></a>
+                <a href="#"><img class="social_media_icon" src="./images/Facebook.png" alt="Facebook"></a>
+                <a href="#"><img class="social_media_icon" src="./images/Instagram.png" alt="Instagram"></a>
+                <a href="#"><img class="social_media_icon" src="./images/LinkedIn.png" alt="LinkedIn"></a>
+                <a href="#"><img class="social_media_icon" src="./images/YouTube.png" alt="YouTube"></a>
+                <a href="#"><img class="social_media_icon" src="./images/TikTok.png" alt="TikTok"></a>
+                <a href="#"><img class="social_media_icon" src="./images/Telegram.png" alt="Telegram"></a>
+                <a href="#"><img class="social_media_icon" src="./images/VK.png" alt="VK"></a>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>

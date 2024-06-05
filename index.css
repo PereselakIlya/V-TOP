@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lexend&family=Raleway&display=swap');
+a{
+    text-decoration: none;
+    color: white;
+}
+html{
+    display: grid;
+    background-color: #110A1D;
+}
+header{
+    width: 85.4%;
+    height: 7.5%;
+    border: 4px solid rgba(71, 139, 249, 1);
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+}
+body{
+    width: 100%;
+    height: 1265px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+footer{
+    height: 10.27%;
+    display: flex;
+    border: 4px solid #478BF9;
+    border-bottom: transparent;
+    border-top-left-radius: 64px;
+    border-top-right-radius: 64px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#logo{
+    width: 17.5%;
+    height: 33.3%;
+}
+#menu{
+    width: 35.8%;
+    height: 37.5%;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.menu_button{
+    font-family: Lexend;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+#buttons{
+    width: 21%;
+    height: 50%;
+    display: flex;
+    gap: 14px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttons_elem{
+    width: 34%;
+    background-color: rgba(17, 10, 29, 1);
+    border: 2px solid rgba(157, 173, 242, 1);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 8px;
+    font-family: Lexend;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    justify-content: center;
+}
+#language_image{
+    max-width: 33%;
+    height: 33%;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+.languageChangerID{
+    color: white;
+    font-family: Lexend;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.languageChangerIDMobile{
+    display: none;
+    color: white;
+    font-family: Lexend;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    margin-top: auto;
+}
+#language_image_mobile{
+    display: none;
+    width: 50%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 27px;
+}
+#language_image_mobileMenu{
+    width: 12%;
+    height: 50%;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+#language_image_mobileMenu:hover{
+    cursor: pointer;
+    background-color: rgba(71, 139, 249, 1);
+}
+#mobilelogo{
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+}
+#menu_button{
+    display: none;
+}
+#menu_button{
+    border: none;
+    background-color: transparent;
+    width: 30%;
+    height: 71%;
+    background-image: url(./images/Menu.png);
+    background-repeat: round;
+}
+#menuMobile{
+    display: none;
+    width: 100%;
+    height: 640px;
+    background-color: #110A1D;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 1;
+}
+#menuMobileHeader{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: 'Lexend';
+    color: white;
+    gap: 4px;
+    height: 9%;
+    width: 88%;
+    align-items: center;
+    border: 2px solid #478BF9;
+    border-radius: 64px;
+    padding-inline: 5%;
+    align-content: center;
+}
+#menuMobileCloseButton:hover{
+    cursor: pointer;
+    background-color: #478BF9;
+}
+#menuMobileContainer{
+    display: flex;
+    list-style-type: none;
+    width: 86%;
+    height: 51%;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+    flex-direction: column;
+    font-family: 'Lexend';
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 24px;
+    margin-top: 11%;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.menuMobile_button{
+    width: 100%;
+    height: 6.5%;
+    border: 2px solid #478BF9;
+    border-radius: 28px;
+    padding: 4% 7.5% 4% 7.5%;
+}
+.menuMobile_button:hover{
+    cursor: pointer;
+    background-color: #478BF9;
+}
+#menuMobileButtonsContainer{
+    margin-top: 11%;
+    height: 15%;
+    width: 94%;
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+#menuMobileButtonsContainer .buttons_elem{
+    display: flex;
+    width: 100%;
+    height: 47%;
+}
+.buttons_elem:hover{
+    cursor: pointer;
+    background-color: rgba(71, 139, 249, 1);
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 76%;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+}
+#titleAndbutton{
+    width: 35%;
+    height: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#titleAndtext{
+    height: 67.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#title{
+    height: 77.4%;
+    font-family: Lexend;
+    font-size: 6em;
+    font-weight: 500;
+    line-height: 96px;
+    letter-spacing: 0em;
+    background-image: linear-gradient(360deg, #478bf9, #ffffff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+}
+#underTitle{
+    height: 12.9%;
+    font-family: Lexend;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF99;
+    margin: 0px;
+}
+#titleAndbutton_button{
+    max-width: 58.7%;
+    height: 19.5%;
+    border: 2px solid #478BF9;
+    background-color: black;
+    -webkit-text-fill-color: #ffffff;
+    border-radius: 48px;
+    font-family: Lexend;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+#titleAndbutton_button:hover{
+    cursor: pointer;
+    background-color: #478BF9;
+}
+#bannerBG{
+    width: 17.3%;
+    height: 139%;
+    display: flex;
+}
+#banner_down{
+    width: 33.3%;
+    background-image: url(images/bannerDown.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    mix-blend-mode: screen;
+    animation-duration: 60s;
+    animation-name: bannerDown;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear(0.1 -0.59%, -0.29 0%);
+}
+#banner_up{
+    width: 33.3%;
+    background-image: url(images/banner.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    mix-blend-mode: screen;
+    animation-duration: 60s;
+    animation-name: bannerUp;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear(0.1 -0.59%, -0.29 0%);
+}
+#banner_down2{
+    width: 33.3%;
+    background-image: url(images/bannerDown2.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    mix-blend-mode: screen;
+    animation-duration: 60s;
+    animation-name: bannerDown;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear(0.1 -0.59%, -0.29 0%);
+}
+@keyframes bannerDown{
+    from{
+        background-position: bottom;
+    }
+    to{
+        background-position: top;
+    }
+}
+@keyframes bannerUp{
+    from{
+        background-position: top;
+    }
+    to{
+        background-position: bottom;
+    }
+}
+#bannerBGVert{
+    width: 100%;
+    height: 15%;
+    display: none;
+    flex-direction: column;
+}
+#bannerBG{
+    display: flex;
+}
+#banner_vertical{
+    height: 30%;
+    background-image: url(images/bannerVertical.png);
+    background-repeat:repeat-x;
+    background-size: contain;
+    mix-blend-mode: screen;
+    animation-duration: 60s;
+    animation-name: bannerLeft;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear(0.1 -0.59%, -0.29 0%);
+}
+#banner_vertical2{
+    height: 30%;
+    background-image: url(images/bannerVertical2.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    mix-blend-mode: screen;
+    animation-duration: 60s;
+    animation-name: bannerRight;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear(-45 -0.59%, -0.29 0%);
+}
+#banner_vertical3{
+    height: 30%;
+    background-image: url(images/bannerVertical3.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    mix-blend-mode: screen;
+    animation-duration: 60s;
+    animation-name: bannerLeft;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear(0.1 -0.59%, -0.29 0%);
+}
+@keyframes bannerRight{
+    from{
+        background-position: left;
+    }
+    to{
+        background-position: right;
+    }
+}
+@keyframes bannerLeft{
+    from{
+        background-position: right;
+    }
+    to{
+        background-position: left;
+    }
+}
+#blog{
+    width: 28%;
+    height: 71.4%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#blog_title{
+    font-family: Lexend;
+    font-size: 2.5em;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0px;
+}
+#area{
+    width: 100%;
+    height: 86.7%;
+    border: 3px solid #478BF9;
+    border-radius: 100px;
+    overflow-y: hidden;
+    background-color: #FFFFFF1F;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+#card_area{
+    max-width: 87.9%;
+    height: 97.9%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-right: 24px;
+}
+#card_area::-webkit-scrollbar{
+    width: 8px;
+}
+#card_area::-webkit-scrollbar-thumb{
+    background-color:#478BF9;
+    border-radius: 10px;
+    border-bottom: 104px solid rgba(255, 255, 255, 0);
+}
+#card_area::-webkit-scrollbar-track{
+    background-color:#FFFFFF1F;
+    border-radius: 10px;
+    margin: 96px 0 96px 0;
+}
+.card{
+    height: 25%;
+    background-color: #1E1231;
+    border: 2px solid #1E1231;
+    border-radius: 196px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 64px;
+}
+.card_text{
+    margin: 0px;
+    font-family: Lexend;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.time_stamp{
+    font-family: Futura PT;
+    font-size: 0.875em;
+    font-weight: 450;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF99;
+}
+#footer_menu{
+    width: 31.25%;
+    height: 15.3%;
+    display: flex;
+    padding: 0px;
+    justify-content: space-between;
+    margin: 0;
+}
+.footer_menu_button{
+    font-family: Lexend;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    list-style-type: none;
+}
+#social_media_container{
+    display: grid;
+    width: 16.25%;
+    height: 50.7%;
+}
+#social_media_title{
+    color: #FFFFFF;
+    width: 100%;
+    height: 30%;
+    font-family: Lexend;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-bottom: 14px;
+    margin-top: 0;
+}
+#social_media_buttons{
+    display: flex;
+    width:100%;
+    height:48.4%;
+    justify-content: space-between;
+}
+.social_media_icon{
+    width: 32px;
+    height: 32px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+.social_media_icon:hover{
+    mix-blend-mode: difference;
+    background-clip:content-box;
+}
+@media screen and (max-width: 300px) {
+    header{
+        width: 94%;
+        height: 4%;
+    }
+    #logo{
+        width: 18%;
+        height: 32%;
+    }
+    #buttons{
+        justify-content: flex-end;
+    }
+    .buttons_elem{
+        display: none;
+    }
+    #menu{
+        display: none;
+    }
+    #language_image_mobile{
+        display: block;
+    }
+    #language_image_mobile:hover{
+        cursor: pointer;
+        background-color: rgba(71, 139, 249, 1);
+    }
+    #menu_button{
+        display: block;
+        width: 50%;
+        height: 100%;
+    }
+    #menu_button:hover{
+        cursor: pointer;
+        background-color: rgba(71, 139, 249, 1);
+    }
+    main{
+        flex-direction: column;
+        align-content: normal;
+    }
+    #titleAndbutton{
+        width: 94%;
+        height: 22%;
+        align-items: center;
+    }
+    #titleAndtext{
+        height: 68%;
+    }
+    #title{
+        height: 61%;
+        font-size: 3em;
+        line-height: 46px;
+        text-align: center;
+    }
+    #underTitle{
+        height: 32%;
+        font-size: 1.25em;
+        line-height: 26px;
+        text-align: center;
+    }
+    #titleAndbutton_button{
+        height: 22%;
+        width: 100%;
+        max-width: 100%;
+        font-size: 1em;
+        line-height: 22.5px;
+    }
+    #bannerBG{
+        display: none;
+    }
+    #bannerBGVert{
+        display: flex;
+    }
+    #blog{
+        width: 94%;
+        height: 44%;
+    }
+    #blog_title{
+        width: 31%;
+        height: 8%;
+        font-size: 2em;
+        text-align: center;
+    }
+    #area{
+        height: 88%;
+    }
+    #card_area{
+        max-width: 91.3%;
+        height: 100%;
+        gap: 10px;
+        padding-right: 16px;
+    }
+    .card{
+        height: 23%;
+        padding: 15px 35px;
+    }
+    .card_text{
+        font-size: 1em;
+        line-height: 20px;
+    }
+    footer{
+        height: 16%;
+        flex-direction: column;
+    }
+    #footer_menu{
+        width: 88%;
+        height: 46%;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.875em;
+    }
+    #social_media_container{
+        width: 87%;
+        height: 24%;
+    }
+    #social_media_title{
+        width: auto;
+        height: auto;
+        font-size: 0.875em;
+        text-align: unset;
+        margin-bottom: 8px;
+    }
+    #social_media_buttons{
+        height: 100%;
+        width: 97%;
+    }
+    .social_media_icon{
+        width: 27px;
+        height: 27px;
+    }
+    .languageChangerIDMobile{
+        display: block;
+    }
+}
